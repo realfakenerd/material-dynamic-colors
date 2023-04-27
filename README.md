@@ -16,12 +16,15 @@ This project is based on https://material-foundation.github.io/material-theme-bu
 
 ```html
 // with html
-<script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.1.7/dist/cdn/material-dynamic-colors.min.js"></script>
+<script
+	type="module"
+	src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.1.7/dist/cdn/material-dynamic-colors.min.js"
+></script>
 ```
 
 ```js
 // with javascript
-import "https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.1.7/dist/cdn/material-dynamic-colors.min.js";
+import 'https://cdn.jsdelivr.net/npm/material-dynamic-colors@0.1.7/dist/cdn/material-dynamic-colors.min.js';
 ```
 
 ### NPM
@@ -33,26 +36,27 @@ npm i material-dynamic-colors
 
 ```js
 // importing as window.materialDynamicColors
-import "material-dynamic-colors";
+import 'material-dynamic-colors';
 ```
 
 ```js
 // importing as materialDynamicColors
-import materialDynamicColors from "material-dynamic-colors";
+import materialDynamicColors from 'material-dynamic-colors';
 ```
 
 ## How to use it?
+
 ```js
 let colors = await materialDynamicColors(source);
 
 // from color
-let colors = await materialDynamicColors("#ffd700");
+let colors = await materialDynamicColors('#ffd700');
 
 // from path
-let colors = await materialDynamicColors("/image.png");
+let colors = await materialDynamicColors('/image.png');
 
 // from url (caution with cors errors)
-let colors = await materialDynamicColors("http://domain.com/image.png");
+let colors = await materialDynamicColors('http://domain.com/image.png');
 
 // from file
 let fromFile = document.query("input[type='file']").files[0];
@@ -64,6 +68,7 @@ let colors = await materialDynamicColors(blob);
 ```
 
 ## Returned object
+
 ```js
 {
    light:{
@@ -123,11 +128,10 @@ let colors = await materialDynamicColors(blob);
 }
 ```
 
-
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
 
 ## Thank you!
+
 [![Stargazers repo roster for @leonardorafael/material-dynamic-colors](https://reporoster.com/stars/notext/leonardorafael/material-dynamic-colors)](https://github.com/leonardorafael/material-dynamic-colors/stargazers)

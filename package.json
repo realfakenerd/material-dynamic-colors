@@ -1,36 +1,43 @@
 {
-  "author": "Leonardo Rafal Wehrmeister",
-  "description": "This project is based on https://material-foundation.github.io/material-theme-builder",
-  "homepage": "https://github.com/leonardorafael/material-dynamic-colors",
-  "version": "0.1.7",
-  "name": "material-dynamic-colors",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "cdn": "node ./build/cdn.js",
-    "build": "npm run cdn"
-  },
-  "devDependencies": {
-    "terser": "^5.10.0"
-  },
-  "files": [
-    "dist/cdn",
-    "src/cdn",
-    "index.d.ts",
-    "index.js"
-  ],
-  "keywords": [
-    "material-design",
-    "dynamic-colors",
-    "palette",
-    "theme"
-  ],
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leonardorafael/material-dynamic-colors.git"
-  },
-  "bugs": {
-    "url": "https://github.com/leonardorafael/material-dynamic-colors/issues"
-  }
+	"author": "Leonardo Rafal Wehrmeister",
+	"description": "This project is based on https://material-foundation.github.io/material-theme-builder",
+	"homepage": "https://github.com/leonardorafael/material-dynamic-colors",
+	"version": "0.0.1",
+	"name": "material-dynamic-colors",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"format": "prettier --cache --plugin-search-dir . -w .",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.59.0",
+		"@typescript-eslint/parser": "^5.59.0",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"prettier": "^2.8.7",
+		"terser": "^5.10.0",
+		"typescript": "^5.0.4",
+		"vite": "^4.2.2"
+	},
+	"files": [
+		"dist/cdn",
+		"src/cdn",
+		"index.d.ts",
+		"index.js"
+	],
+	"keywords": [
+		"material-design",
+		"dynamic-colors",
+		"palette",
+		"theme"
+	],
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/leonardorafael/material-dynamic-colors.git"
+	},
+	"bugs": {
+		"url": "https://github.com/leonardorafael/material-dynamic-colors/issues"
+	}
 }

@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"outDir": "temp",
+		"sourceMap": false,
+		"target": "esnext",
+		"newLine": "LF",
+		"useDefineForClassFields": false,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"allowJs": false,
+		"strict": true,
+		"noUnusedLocals": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"removeComments": false,
+		"rootDir": "src"
+	},
+	"include": ["src"]
+}
